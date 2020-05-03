@@ -18,6 +18,10 @@ def hello():
 def courses():
     return render_template('courses.html')
 
+@app.route('/past_courses')
+def past_courses():
+    return render_template('past_courses.html')
+
 @app.route('/ramen')
 def ramen():
     return render_template('ramen.html')
